@@ -1,0 +1,27 @@
+1. En aquellos servicios que haya un alto tráfico de red, la mejor solución es:
+a) Montar una granja web, ya que permite una alta disponibilidad y escalabilidad.
+b) Instalar el mejor hardware del mercado en nuestro servidor.
+c) Montar el servidor en una sola máquina para ahorrar en costes.
+d) Usar redundancia por software para montar sistemas RAID.
+Respuesta correcta: a
+
+2. Mediante el concepto de redundancia:
+a) Evitamos errores de programación en aplicaciones.
+b) Duplicamos un componente del servidor para usarlo en caso de que el componente original falle.
+c) Dividimos la carga de peticiones web entre varios servidores.
+d) Monitorizamos el estado del servidor.
+Respuesta correcta: b
+
+3. Escalar un servidor ampliando en horizontal:
+a) Resulta mucho más caro que si ampliamos en vertical.
+b) No da ninguna ventaja en cuanto a carga de tráfico soportada.
+c) Significa añadir más máquinas iguales para poder dividir el trabajo entre ellas.
+d) Obtiene peores resultados en cuanto a carga soportada que usar ampliación vertical.
+Respuesta correcta: c
+
+4. ¿Cuál de las siguientes respuestas es cierta respecto a la escala "punto nueve"?
+a) No existe, en realidad se llama "cinco nueves".
+b) Se usa para medir el número de peticiones web del servidor.
+c) Se dice cuando en una granja web hay nueve máquinas en funcionamiento.
+d) Se usa para determinar si nuestro servidor tiene una alta disponibilidad. 
+Respuesta correcta: d

@@ -1,0 +1,20 @@
+1. ¿Cuál es el verdadero problema de una zona sin desmilitarizar?
+a) Compartición del ancho de banda (servidores y máquinas de escritorio)
+b) Todas las opciones son correctas
+c) Si uno de los servidores se ve comprometido, el resto de recursos puede ser atacado
+d) Asegurar los servidores es más complicado
+Respuesta correcta: b
+
+2. ¿Cuál de las siguientes configuraciones de zonas es la más segura?
+a) Configuración de DMZ triple
+b) Configuración de DMZ simple
+c) Configuración de DMZ tradicional
+d) Configuración de DMZ doble
+Respuesta correcta: d
+
+3. ¿Cuál de las siguientes afirmaciones es verdadera?
+a) Se pueden obtener servicios externos conectando a redes seguras
+b) La configuración de la red de la granja web se puede hacer de una única forma
+c) La configuración de zona más segura es la de DMZ tradicional
+d) Los usuarios acceden desde Internet a los servidores conectados en la subred trasera
+Respuesta correcta: a

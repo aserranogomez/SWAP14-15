@@ -1,0 +1,20 @@
+1. Virtual IP (VIP) es:
+a) La dirección pública a la que acceden los usuarios cuando hacen una petición de servicio a nuestro servidor web.
+b) La dirección privada a la que acceden los usuarios cuando hacen una petición de servicio a nuestro servidor web.
+c) Normalmente es la IP del balanceador.
+d) La A y C son correctas. 
+Respuesta correcta: D
+
+2. Un balanceador de carga:
+a) Es un puente entre los servidores y la red.
+b) Puede manejar los protocolos de alto nivel.
+c) Puede manejar los protocolos de nivel de red.
+d) Todas son correctas.
+Respuesta correcta: D
+
+3. Si vamos a tener servidores con diferente configuración y potencia, y vamos a servir diferentes aplicaciones y contenidos:
+a) Usamos algoritmos estáticos.
+b) Usamos algoritmos basados en ponderación.
+c) Usamos el algoritmo estático del tipo round-robin.
+d) Ninguna es correcta.
+Respuesta correcta: B

@@ -1,0 +1,41 @@
+1. El número de conexiones concurrentes:
+a) Es la métrica para determinar cuantas sesiones de usuario TCP puede manejar el balanceador.
+b) Está limitado por la memoria o el procesador del dispositivo.
+c) Ninguna es correcta
+d) La A y B son correctas.
+Respuesta correcta: D
+
+2. Dentro de los tipos de tráfico, cuál de ellos hace una conexión inicial, y a continuación se envía una gran cantidad de información.
+a) Tráfico FTP y el de streaming.
+b) El tráfico HTTP.
+c) El tráfico TCP.
+d) Ninguna es correcta.
+Respuesta correcta: a
+
+3. ¿Qué versión HTTP permite obtener varios objetos durante una sesión abierta con una sola conexión?
+a) HTTP 2.3
+b) HTTP 2.0
+c) HTTP 1.1
+d) HTTP 1.0
+Respuesta correcta: C
+
+1. ¿Qué debe asegurar la defensa en profundidad en el caso de una granja web?
+a) La protección a diferentes niveles de seguridad.
+b) La intrusión de paquetes no deseados dentro del servidor.
+c) Evitar la redundancia de datos en los discos.
+d) Todas son correctas.
+Respuesta correcta: A
+
+2. ¿En qué consiste un privilegio de uso?
+a) Son las acciones que puede llevar a cabo el administrador dentro del sistema.
+b) Definen las acciones que puede llevar a cabo un usuario correctamente identificado.
+c) Son los diferentes niveles de seguridad por los que debe pasar un hacker.
+d) Ninguna de las anteriores es correcta.
+Respuesta correcta: B
+
+3. ¿Cuál de las siguientes arquitecturas ofrece seguridad a nivel de red?
+a) Conexión de red.
+b) Red compartida.
+c) Dominio compartido.
+d) Servidor no redundante.
+Respuesta correcta: C

@@ -1,0 +1,41 @@
+1. Una gran cantidad de accesos a la BD por cada petición HTTp puede sobrcargar la conexión de la red entre los:
+a) Servidores de aplicacion y BD
+b) Servidores de BD y video
+c) Servidores web y BD
+d) Servidores de aplicacion y web
+Respuesta correcta: C
+
+2. ¿Cuál de estos RAID existe?:
+a) RAID 1+2
+b) RAID 1+0
+c) RAID 3+4
+d) RAID 6+7
+Respuesta correcta: B
+
+3. Cuál de las siguientes abreviaturas pertenece a "Área de almacenamiento en red":
+a) SSA
+b) DAS
+c) NAS
+d) SAN
+Respuesta correcta: D
+
+1. Hardware ampliable:
+a) Un hardware ampliable debe tener capacidad de disco, cpu, red y memoria que excedan los requisitos para poder soportar las aplicaciones futuras.
+b) El hardware no es importante en un servidor.
+c) Simplemente con un ordenador que tenga un hardware aguantando las aplicaciones actuales no se necesita mas potencia
+d) El software puede solucionar los problemas de hardware
+Respuesta correcta: A
+
+2. Hardware tolerante a fallos:
+a) Con una maquina buena se tiene una disponibilidad del server del 99%, no se necesita mas.
+b) Es necesaria una inversion inicial en la adquisicion de fuentes de alimentacion discos duros etc para evitar caidas prolongadas del servicio.
+c) Hacer un sobrecosto inicial no implica mejoras en el servicio.
+d) El softwre puede solucionar los problemas de hardware
+Respuesta correcta: B
+
+3. Area de almacenamiento en red:
+a) Se conectan impresoras y faxes en red.
+b) El softwre puede solucionar los problemas de hardware
+c) Es un sistema de almacenamiento que usa múltiples discos duros entre los que se distribuyen o replican los datos.
+d) Es una red de almacenamiento muy especializada que conecta dispositivos de almacenamiento a los servidores.
+Respuesta correcta: D

@@ -2,7 +2,7 @@
 
 ##Balanceo de carga
 
-##El servidor web nginx
+##Balanceo de carga con nginx
 
 * Lo primero que vamos a hacer, una vez hayamos instalado nuestra tercera máquina
   virtual, es proceder a instalar nginx sobre dicha máquina. Para ello, seguiremos los

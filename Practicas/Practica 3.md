@@ -2,7 +2,7 @@
 
 ##Balanceo de carga
 
-			##El servidor web nginx
+	**El servidor web nginx**
 * Lo primero que vamos a hacer, una vez hayamos instalado nuestra tercera máquina
   virtual, es proceder a instalar nginx sobre dicha máquina. Para ello, seguiremos los
   siguientes pasos:
@@ -30,28 +30,6 @@
   balanceador de carga. Para ello, editaremos el fichero “/etc/nginx/conf.d/default.conf”,
   borraremos todo lo que haya, e introduciremos lo siguiente:
 
-upstream apaches {
-	server 192.168.56.101;
-	server 192.168.56.102;
-}
-
-server{
-	listen 80;
-	server_name m3lb;
-	access_log /var/log/nginx/m3lb.access.log;
-	error_log /var/log/nginx/m3lb.error.log;
-	root /var/www/;
-	location /
-	{
-		proxy_pass http://apaches;
-		proxy_set_header Host $host;
-		proxy_set_header X-Real-IP $remote_addr;
-		proxy_set_header	X-Forwarded-For
-		$proxy_add_x_forwarded_for;
-		proxy_http_version 1.1;
-		proxy_set_header Connection "";
-	}
-}
 
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%203/maquina%203/3.png)
 
@@ -109,7 +87,7 @@ upstream apaches {
 
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%203/maquina%203/9.png)
 
-			##Balanceo de carga con haproxy
+	**Balanceo de carga con haproxy**
 * Primero ejecutaremos el comando **“sudo apt-get install haproxy”**.
 * Una vez instalado, debemos modificar el archivo **/etc/haproxy/haproxy.cfg** ya que la
   configuración que trae por defecto no nos vale. Así pues, tras consultar cuál es la IP de
@@ -118,24 +96,6 @@ upstream apaches {
 
 * Por defecto, el archivo de configuración de haproxy no nos vale, lo borraremos y lo
 sustituiremos por el siguiente código:
-
-global
-	daemon
-	maxconn 256
-
-defaults
-	mode http
-	contimeout 4000
-	clitimeout 42000
-	srvtimeout 43000
-
-frontend http-in
-	bind *:80
-	default_backend servers
-
-backend servers
-	server m1 192.168.56.101:80 maxconn 32
-	server m2 192.168.56.102:80 maxconn 32
  
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%203/maquina%203/10.png)
 

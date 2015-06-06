@@ -2,7 +2,8 @@
 
 ##Balanceo de carga
 
-	**El servidor web nginx**
+##El servidor web nginx
+
 * Lo primero que vamos a hacer, una vez hayamos instalado nuestra tercera máquina
   virtual, es proceder a instalar nginx sobre dicha máquina. Para ello, seguiremos los
   siguientes pasos:
@@ -87,7 +88,8 @@ upstream apaches {
 
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%203/maquina%203/9.png)
 
-	**Balanceo de carga con haproxy**
+##Balanceo de carga con haproxy
+
 * Primero ejecutaremos el comando **“sudo apt-get install haproxy”**.
 * Una vez instalado, debemos modificar el archivo **/etc/haproxy/haproxy.cfg** ya que la
   configuración que trae por defecto no nos vale. Así pues, tras consultar cuál es la IP de

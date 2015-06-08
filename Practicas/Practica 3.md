@@ -58,12 +58,12 @@ siguiente imagen.
   si no modificamos ninguna máquina del grupo, todas recibirán la misma cantidad de
   carga. Para probar esto, daré más prioridad a la máquina 2, suponiendo que es más
   potente que la dos. Para ello, pondremos el código de la siguiente manera:
-''
+```
 upstream apaches {
 	server 192.168.56.101 weight=2;
 	server 192.168.56.102 weight=1;
 }
-''
+```
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%203/maquina%203/6.png)
 
 * Volvemos a hacer peticiones a la ip del balanceador y vemos como la máquina 2 da mas respuestas
@@ -74,14 +74,14 @@ upstream apaches {
   mismo servidor final, usaremos la directiva ip_hash al definir el upstream y para especificar a nginx 
   que use keepalive, debemos modificar nuestro upstream añadiendo la directiva keepalive y un tiempo de 
   mantenimiento de la conexión en segundos:
-
+```
 upstream apaches {
 	ip_hash;
 	server 192.168.56.101 weight=2;
 	server 192.168.56.102 weight=1;
 	keepalive 3;
 }
-
+```
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%203/maquina%203/8.png)
 
 * Volvemos a hacer peticiones a la ip del balanceador y vemos como siempre nos sirve la máquina 2.

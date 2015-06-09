@@ -34,8 +34,9 @@ second", "Time per request".
 
 * A “pruebamedicion.html”
  Ahora deberemos ejecutar el mismo comando, pero pondremos la ip del balanceador.
+```
 **ab -n 1000 -c 5 http://192.168.56.103/ pruebamedicion.html**
-
+```
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%204/7.png)
 
 * Y estos son los resultados que obtenemos:
@@ -51,14 +52,14 @@ second", "Time per request".
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%204/12.png)
 
 ##MEDICIONES AL BALANCEADOR CON HAPROXY ARRANCADO
-
+```
 * Para arrancar haproxy hacemos lo siguiente:
 **sudo /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg**
 y apagamos nginx con:
 **sudo /etc/ini.d/nginx stop**
 Empezamos enviando peticiones a pruebamedicion.html
 **ab -n 1000 -c 5 http://192.168.56.103/ pruebamedicion.html**
-
+```
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%204/13.png)
 
 * Y estos son los resultados que obtenemos:
@@ -76,8 +77,9 @@ Empezamos enviando peticiones a pruebamedicion.html
 ##MEDICIONES AL BALANCEADOR CON SIEGE
 
 Para la ejecución de esta bateria de pruebas se ha usado el comando 
+```
  **siege -b -t60S -v http://192.168.56.103/index.php**
-
+```
 Y estos son los resultados que obtenemos:
 
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%204/19.jpg)
@@ -108,11 +110,12 @@ Ejecutaremos el comando que muestro a continuación en la imagen:
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%204/28.png)
 
 ##MEDICICIONES CON HTTPERF CON HAPROXY ARRANCADO
-
+```
 * Para arrancar haproxy hacemos lo siguiente:
 **sudo /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg**
 y apagamos nginx con:
 **sudo /etc/ini.d/nginx stop**
+```
 Empezamos enviando peticiones a pruebamedicion.html, tal como muestro en la
 imagen:
 
@@ -127,12 +130,12 @@ imagen:
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%204/32.png)
 
 ##MEDICICIONES CON HTTPERF CON NGINX ARRANCADO
-
+```
 * Para parar haproxy ejecutamos
 **sudo service haproxy stop**
 y arrancamos nginx con
 **sudo service nginx start**
-
+```
 * Y empezamos a enviar peticiones a pruebamedicion.html, tal como muestro en la imagen:
 
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%204/33.png)
@@ -148,8 +151,9 @@ y arrancamos nginx con
 ##MEDICICIONES CON OPENWEBLOAD
 
 * Comenzaremos haciendo peticiones a la máquina 1 mediante el comando que muestro a continuación.
+```
 **openload -l 20 http://192.168.56.101/pruebamedicion.html 10**
-
+```
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%204/37.png)
 
 * Y estos son los resultados que obtenemos:
@@ -163,8 +167,9 @@ y arrancamos nginx con
 ##OPENWEBLOAD CON NGINX ARRANCADO
 
 * Hacemos peticiones a la ip del balanceador con el mismo comando usado antes
+```
 **openload -l 20 http://192.168.56.103/pruebamedicion.html 10**
-
+```
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%204/41.png)
 
 * Y estos son los resultados que obtenemos:
@@ -178,8 +183,9 @@ y arrancamos nginx con
 ##OPENWEBLOAD CON HAPROXY ARRANCADO
 
 * Hacemos peticiones a la ip del balanceador con el mismo comando usado antes
+```
 **openload -l 20 http://192.168.56.103/pruebamedicion.html 10**
-
+```
 ![img](https://github.com/aserranogomez/SWAP14-15/blob/master/Imagenes/Practica%204/45.png)
 
 * Y estos son los resultados que obtenemos:
